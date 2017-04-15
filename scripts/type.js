@@ -1,23 +1,22 @@
-var a = 1000 /* Interval before begining */
-var t = 100 /* Interval between chars */
-      
-/* */
-/* */
-/* */
-/* */
+function type() {
+  var element = document.querySelector(".type"); // Your element
+  var content = element.innerHTML; // Getting the content of your element
+  var lenght = content.length; // Getting its length
+  element.innerHTML=""; // Setting its content to void
 
-var element = document.querySelector(".type");
-var content = element.innerHTML;
-var lenght = content.length;
-element.innerHTML="";
-var i = 0;
+  var start_interval = element.getAttribute("type-start"); // Interval before begining
+  var type_interval = element.getAttribute("type-interval"); // Interval between chars
 
-setTimeout("write()",a);
+  var i = 0; // Setting up loop increment to 0
 
-function write() {
-  element.innerHTML+=content[i];
-  i++;
-  if (i < lenght) {
-    setTimeout("write()",t);
-  }
+  setTimeout(function() { // After start_interval (*)
+    writeInterval = setInterval(function() { // Do writeInterval each type_interval (**)
+      element.innerHTML+=content.charAt(i); // Add to your element content its content plus the current incrementation letter
+      i++; // Increments
+      if (i >= lenght) { // If incrementation is as more as the length of your element
+        clearInterval(writeInterval); // Clear interval: stop function
+      }
+    },type_interval); // **
+  },start_interval); // *
 }
+type();

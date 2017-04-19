@@ -4,7 +4,7 @@ Type.js is a simple tool for a cool writing effect on your website.
 
 ## Usage
 
-Link your script at the bottom of your HTML page : `<script src="scripts/type.min.js"></script>`.
+Link the script at the bottom of your HTML page : `<script src="scripts/type.min.js"></script>`.
 
 Add the class `.type` on your element.
 

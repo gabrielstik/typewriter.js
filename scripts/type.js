@@ -4,6 +4,9 @@ function type() {
   var lenght = content.length; // Getting its length
   element.innerHTML=""; // Setting its content to void
 
+  var start_interval = 1000;
+  var type-interval = 100;
+
   var start_interval = element.getAttribute("type-start"); // Interval before begining
   var type_interval = element.getAttribute("type-interval"); // Interval between chars
 

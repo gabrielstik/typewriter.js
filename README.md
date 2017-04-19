@@ -5,6 +5,7 @@ Type.js is a simple tool for a cool writing effect on your website.
 ## Usage
 
 Add the class `.type` on your element.
+Link your script at the bottom of your HTML page : `<script src="scripts/type.min.js"></script>`.
 
 #### Parameters
 * **type-start** is the delay before the animation starts.

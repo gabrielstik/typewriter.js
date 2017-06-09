@@ -2,6 +2,7 @@ function type() {
   let element = document.querySelector(".type") // Your element
   let content = element.innerHTML // Getting the content of your element
   let lenght = content.length // Getting its length
+  let start_interval, type_interval
   element.innerHTML = "" // Setting its content to void
 
   if (element.getAttribute("type-start")) {

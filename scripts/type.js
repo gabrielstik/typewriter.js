@@ -6,7 +6,7 @@ function type() {
 
   if (element.getAttribute("type-start")) {
     // If attributes are not empty
-    let _start_interval = element.getAttribute("type-start") // Interval before begining
+    let start_interval = element.getAttribute("type-start") // Interval before begining
     let type_interval = element.getAttribute("type-interval") // Interval between chars
   } else {
     // If they are, use default values

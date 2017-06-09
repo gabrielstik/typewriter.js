@@ -1,28 +1,32 @@
 function type() {
-  var element = document.querySelector(".type"); // Your element
-  var content = element.innerHTML; // Getting the content of your element
-  var lenght = content.length; // Getting its length
-  element.innerHTML=""; // Setting its content to void
+  let element = document.querySelector(".type") // Your element
+  let content = element.innerHTML // Getting the content of your element
+  let lenght = content.length // Getting its length
+  element.innerHTML = "" // Setting its content to void
 
-  if (element.getAttribute("type-start")) { // If attributes are not empty
-    var start_interval = element.getAttribute("type-start"); // Interval before begining
-    var type_interval = element.getAttribute("type-interval"); // Interval between chars
+  if (element.getAttribute("type-start")) {
+    // If attributes are not empty
+    let _start_interval = element.getAttribute("type-start") // Interval before begining
+    let type_interval = element.getAttribute("type-interval") // Interval between chars
+  } else {
+    // If they are, use default values
+    let start_interval = 1000 // Setting default values
+    let type_interval = 100 // Idem
   }
-  else { // If they are, use default values
-    var start_interval = 1000; // Setting default values
-    var type_interval = 100; // Idem
-  }
 
-  var i = 0; // Setting up loop increment to 0
+  let i = 0 // Setting up loop increment to 0
 
-  setTimeout(function() { // After start_interval (*)
-    writeInterval = setInterval(function() { // Do writeInterval each type_interval (**)
-      element.innerHTML+=content.charAt(i); // Add to your element content its content plus the current incrementation letter
+  setTimeout(() => {
+    // After start_interval (*)
+    writeInterval = setInterval(() => {
+      // Do writeInterval each type_interval (**)
+      element.innerHTML += content.charAt(i) // Add to your element content its content plus the current incrementation letter
       i++; // Increments
-      if (i >= lenght) { // If incrementation is as more as the length of your element
+      if (i >= lenght) {
+        // If incrementation is as more as the length of your element
         clearInterval(writeInterval); // Clear interval: stop function
       }
-    },type_interval); // **
-  },start_interval); // *
+    }, type_interval) // **
+  }, start_interval) // *
 }
 type();

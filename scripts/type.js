@@ -6,8 +6,8 @@ function type() {
 
   if (element.getAttribute("type-start")) {
     // If attributes are not empty
-    start_interval = element.getAttribute("type-start") // Interval before begining
-    type_interval = element.getAttribute("type-interval") // Interval between chars
+    var start_interval = element.getAttribute("type-start") // Interval before begining
+    var type_interval = element.getAttribute("type-interval") // Interval between chars
   } else {
     // If they are, use default values
     start_interval = 1000 // Setting default values
@@ -18,7 +18,7 @@ function type() {
 
   setTimeout(() => {
     // After start_interval (*)
-    writeInterval = setInterval(() => {
+    var writeInterval = setInterval(() => {
       // Do writeInterval each type_interval (**)
       element.innerHTML += content.charAt(i) // Add to your element content its content plus the current incrementation letter
       i++; // Increments

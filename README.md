@@ -1,22 +1,33 @@
-# type.js
+# typewriter.js
 
 Type.js is a simple tool for a cool writing effect on your website.
 
+
+
 ## Usage
 
-Link the script at the bottom of your HTML page : `<script src="scripts/type.min.js"></script>`.
+Link the script at the bottom of your HTML page : `<script src="scripts/typewriter.min.js"></script>`.
 
-Add the class `.type` on your element.
+Add the attribute `tw` on your element.
 
-#### Parameters
-* **type-start** is the delay before the animation starts.
-* **type-interval** is the interval between each letter.
+### Properties
 
-## Exemple
+Add attributes to your element from the list below 
 
-`<p class="type" type-start="1000" type-interval="100">Type.js is a good tool!</p>`
+* **tw-delay** is the delay before the animation starts.
+* **tw-interval** is the interval between each letter.
 
-"Type.js is a good tool" will start writing after 1000ms and each letter will be written 100ms after the previous.
+### Example
 
+`<p tw tw-delay="1000" tw-interval="50">Hello World!</p>`
+
+"Hello World!" will start writing after 1000ms and each letter will be written 50ms after the previous.
 
 *Clone the project to try!*
+
+
+
+## Contribute
+
+### Prerequisites
+

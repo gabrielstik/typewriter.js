@@ -1,0 +1,32 @@
+{
+  "name": "static-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gabrielstik/static-template",
+  "author": "gabrielstik <gabriel.stik@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-responsive": "^2.8.0",
+    "gulp-rm": "^1.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "npm-install-all": "^1.1.21",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -17,8 +17,10 @@ Type.js is a simple tool for a cool writing effect on your website.
 
 Add attributes to your element from the list below 
 
-* **tw-delay** is the delay before the animation starts.
-* **tw-interval** is the interval between each letter.
+| **Attribute** | **Description**                          | **Default value** |
+| ------------- | ---------------------------------------- | ----------------- |
+| tw-delay      | Delay before typewriter animation starts (in milliseconds) | 1000              |
+| tw-interval   | Interval between each letter (in milliseconds) | 50                |
 
 ### Example
 
@@ -38,7 +40,7 @@ I invite you to create properties and make this project cooler !
 
 ### Prerequisites
 
-![](https://img.shields.io/badge/npm-%3E%3D%205.6.0-blue.svg)![](https://img.shields.io/badge/gulp-%3E%3D%203.9.1-blue.svg)
+![](https://img.shields.io/badge/npm-%3E%3D%205.6.0-blue.svg) ![](https://img.shields.io/badge/gulp-%3E%3D%203.9.1-blue.svg)
 
 ```sh
 # Download node_modules
@@ -56,15 +58,15 @@ gulp minify
 
 ### Conventions used
 
-##### ECMAScript standard
+#### ECMAScript standard
 
 Please use ES6 ECMAScript standard as possible
 
-##### Object programming
+#### Object programming
 
 All the code should fit in the TypeWriter class
 
-##### Dom elements prefixing
+#### Dom elements prefixing
 
 Please add a **$** as a prefix of DOM elements
 
@@ -74,7 +76,7 @@ const $el = document.querySelector('[tw]')
 const el = {}
 ```
 
-##### Array of DOM elements suffixing
+#### Array of DOM elements suffixing
 
 Please add a **s** as a suffix of an array which contains DOM elements
 
@@ -85,7 +87,7 @@ for (const $el of $els) {
 }
 ```
 
-##### Short conditionals
+#### Short conditionals
 
 Use as much as possible short conditionals
 

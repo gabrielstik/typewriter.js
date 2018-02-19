@@ -14,7 +14,7 @@ class TypeWriter {
 	}
 
 	getTwAttribute($el, attr, def) {
-		return $el.hasAttribute(attr) ? $el.getAttribute(attr) : def
+		return $el.hasAttribute(attr) ? parseInt($el.getAttribute(attr)) : parseInt(def)
 	}
 
 	typewrite(el) {
@@ -23,7 +23,7 @@ class TypeWriter {
 		let i = 0
 		
 		const write = () => {
-			el.dom.innerHTML += el.content[i]
+			el.dom.innerHTML += `<span tw-index="${i}">${el.content[i]}</span>`
 			i++
 			if (i < length) setTimeout(write, el.interval)
 		}
